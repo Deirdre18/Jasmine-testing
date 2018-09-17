@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>Jasmine Testing</title>
+
+    <!-- Load Jasmine Framework 
+    Make sure these are in order - first jasmine.js, jasmine-html.js (run jasmine tests in browser), boot(runs any test as soon as it's in browser), runs any test that's in the browser.-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/boot.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.7.0/jasmine.css">
+
+    <!-- Load scripts.  First calculator and then scripts for calculator. 
+    Reason that we load in the calc.js file first is so that any functions or objects or
+    anything that we define within the calc.js file will actually be referenceable inside 
+    of our calc.js-->
+    <script type="text/javascript" src="scripts/calc.js"></script>
+
+    <!-- Load Tests -->
+    <script type="text/javascript" src="spec/calcSpec.js"></script>
+</head>
+
+    <!-- no body, as there are no elements, just testing js code and it's still considered to be valid html code if leaving out body element.-->.
+
+</html>
